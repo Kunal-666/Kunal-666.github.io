@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+      // GitHub Pages SPA redirect
+      const path = location.pathname;
+      const query = location.search;
+      const hash = location.hash;
+
+      // store current path and redirect to root
+      sessionStorage.redirect = path + query + hash;
+      location.replace("/");
+    </script>
+  </head>
+  <body></body>
+</html>
